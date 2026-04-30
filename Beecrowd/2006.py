@@ -1,6 +1,11 @@
-tea = input().strip()
+tea = input()
 
-numeros = input().split()
+numeros = input()
 
+contador = 0
 
-print(numeros.count(tea))
+for i in range(len(numeros)):
+    if numeros[i] == tea:
+        contador+=1
+
+print(contador)
